@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Elias Olawale A.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Elias<span>.</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleNav()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="page-hero" style="background: linear-gradient(135deg, var(--navy), var(--orange));">
+    <h1>Get In <span style="color: var(--gold);">Touch</span></h1>
+    <p>Have a project, question, or just want to connect? I'm open.</p>
+  </section>
+
+  <section class="contact-page fade-up">
+    <div class="contact-layout">
+
+      <!-- LEFT: INFO -->
+      <div class="contact-info">
+        <h3>Let's Talk</h3>
+        <p>Whether it's about a collaboration, a question about something on the site, or just a general hello — send a message and I'll get back to you as soon as I can.</p>
+
+        <div class="contact-detail">
+          <div class="c-icon orange">📧</div>
+          <div class="c-detail-text">
+            <strong>Email</strong>
+            <span>eliasola@example.com</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="c-icon teal">📍</div>
+          <div class="c-detail-text">
+            <strong>Location</strong>
+            <span>Nigeria</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="c-icon purple">🎓</div>
+          <div class="c-detail-text">
+            <strong>University</strong>
+            <span>MIVA Open University</span>
+          </div>
+        </div>
+
+        <div style="margin-top: 30px;">
+          <p style="font-size: 0.88rem; color: var(--grey); margin-bottom: 12px;">Find me on:</p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a href="#" style="background: var(--navy); color:white; padding: 8px 16px; border-radius:6px; text-decoration:none; font-size:0.85rem;">LinkedIn</a>
+            <a href="#" style="background: #333; color:white; padding: 8px 16px; border-radius:6px; text-decoration:none; font-size:0.85rem;">GitHub</a>
+            <a href="#" style="background: var(--teal); color:white; padding: 8px 16px; border-radius:6px; text-decoration:none; font-size:0.85rem;">Twitter/X</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div class="contact-form">
+        <h3 style="color: var(--navy); margin-bottom: 22px; font-size: 1.15rem;">Send a Message</h3>
+
+        <div class="form-group">
+          <label for="c-name">Full Name</label>
+          <input type="text" id="c-name" placeholder="Your name" />
+          <span class="error-msg" id="err-name">Name can't be empty.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="c-email">Email Address</label>
+          <input type="text" id="c-email" placeholder="you@example.com" />
+          <span class="error-msg" id="err-email">Enter a valid email address.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="c-phone">Phone Number</label>
+          <input type="text" id="c-phone" placeholder="0801234567" />
+          <span class="error-msg" id="err-phone">Phone should only contain numbers.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="c-msg">Message</label>
+          <textarea id="c-msg" placeholder="Write your message here..."></textarea>
+          <span class="error-msg" id="err-msg">Please include a message.</span>
+        </div>
+
+        <button class="submit-btn" onclick="validateContactForm()">Send Message</button>
+
+        <div class="success-msg" id="success-msg">
+          ✅ Message sent! I'll get back to you soon.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 <span>Elias Olawale A.</span> — All Rights Reserved | Built for COS 106 – MIVA Open University</p>
+  </footer>
+
+  <script src="contact.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

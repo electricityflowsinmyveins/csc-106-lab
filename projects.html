@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Elias Olawale A.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Elias<span>.</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleNav()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="page-hero" style="background: linear-gradient(135deg, var(--navy), var(--teal));">
+    <h1>My <span style="color: var(--gold);">Projects</span></h1>
+    <p>A selection of work I've been involved in — from business strategy to web builds.</p>
+  </section>
+
+  <section class="projects-page fade-up">
+    <h2 class="section-title">What I've <span>Built</span></h2>
+    <div class="divider"></div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-thumb thumb-1">📊</div>
+        <div class="project-info">
+          <h3>Sales Funnel Audit Template</h3>
+          <p>A structured audit document designed to help small businesses identify drop-off points in their sales pipeline. Includes stage-by-stage analysis prompts and a scoring matrix for prioritising fixes.</p>
+          <div class="project-tags">
+            <span class="ptag">RevOps</span>
+            <span class="ptag">Sales</span>
+            <span class="ptag">Google Docs</span>
+          </div>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-thumb thumb-2">✍️</div>
+        <div class="project-info">
+          <h3>Content Strategy Playbook</h3>
+          <p>A 12-week content plan template built for a small Nigerian startup, covering platform selection, content pillars, and posting calendars. Written as a comprehensive internal documentation guide.</p>
+          <div class="project-tags">
+            <span class="ptag">Technical Writing</span>
+            <span class="ptag">Marketing</span>
+            <span class="ptag">Strategy</span>
+          </div>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-thumb thumb-3">🌐</div>
+        <div class="project-info">
+          <h3>Personal Portfolio Website (This One)</h3>
+          <p>Built as part of COS 106 practical term project at MIVA Open University. A multi-page responsive portfolio site using HTML, CSS and JavaScript — no frameworks used.</p>
+          <div class="project-tags">
+            <span class="ptag">HTML</span>
+            <span class="ptag">CSS</span>
+            <span class="ptag">JavaScript</span>
+          </div>
+          <a href="index.html" class="project-link">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <div class="project-thumb thumb-4">⚙️</div>
+        <div class="project-info">
+          <h3>Automation Workflow Map</h3>
+          <p>Mapped out an end-to-end business automation workflow for a service-based business — from lead capture through onboarding to invoice generation — using Zapier and Notion as the backbone.</p>
+          <div class="project-tags">
+            <span class="ptag">Automation</span>
+            <span class="ptag">Zapier</span>
+            <span class="ptag">Operations</span>
+          </div>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- VIDEO EMBED -->
+    <div style="margin-top: 70px; text-align: center;">
+      <h2 class="section-title">Quick <span>Demo</span></h2>
+      <div class="divider"></div>
+      <p style="color:var(--grey); margin-bottom: 25px; max-width: 500px; margin-left:auto; margin-right:auto;">Short walkthrough of how I typically approach a project from brief to delivery.</p>
+      <div style="max-width: 640px; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 30px rgba(0,0,0,0.12);">
+        <video controls width="100%" style="display:block;">
+          <source src="demo.mp4" type="video/mp4" />
+          Your browser doesn't support this video — that's fine, just check out the projects above.
+        </video>
+      </div>
+      <p style="color:#bbb; font-size: 0.8rem; margin-top: 10px;">(Demo video coming soon)</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 <span>Elias Olawale A.</span> — All Rights Reserved | Built for COS 106 – MIVA Open University</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

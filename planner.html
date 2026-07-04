@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academic Planner | Elias Olawale A.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Elias<span>.</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html" class="active">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleNav()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="page-hero" style="background: linear-gradient(135deg, var(--purple), #3a1a80);">
+    <h1>Academic <span style="color: var(--gold);">Planner</span></h1>
+    <p>Keep track of your tasks, deadlines, and study goals.</p>
+  </section>
+
+  <section class="planner-page fade-up">
+    <h2 class="section-title">My <span>Tasks</span></h2>
+    <div class="divider"></div>
+
+    <!-- Add Task -->
+    <div class="planner-input-area">
+      <h3>Add a New Task</h3>
+      <div class="planner-row">
+        <input type="text" id="task-input" placeholder="e.g. Submit COS 106 assignment..." />
+        <select id="priority-select">
+          <option value="high">🔴 High Priority</option>
+          <option value="medium" selected>🟡 Medium</option>
+          <option value="low">🟢 Low</option>
+        </select>
+        <button onclick="addTask()">+ Add Task</button>
+      </div>
+      <p id="add-error" style="color: #e74c3c; font-size:0.82rem; margin-top:8px; display:none;">Please type something before adding a task.</p>
+    </div>
+
+    <!-- Stats -->
+    <div class="task-stats">
+      <div class="stat-box total">Total: <span id="count-total">0</span></div>
+      <div class="stat-box done">Completed: <span id="count-done">0</span></div>
+      <div class="stat-box pending">Pending: <span id="count-pending">0</span></div>
+    </div>
+
+    <!-- Filter buttons -->
+    <div style="margin-bottom: 18px; display:flex; gap:10px; flex-wrap:wrap;">
+      <button onclick="filterTasks('all')" id="btn-all" style="padding:8px 18px; border-radius:20px; border:2px solid var(--navy); background:var(--navy); color:white; cursor:pointer; font-size:0.85rem;">All</button>
+      <button onclick="filterTasks('pending')" id="btn-pending" style="padding:8px 18px; border-radius:20px; border:2px solid var(--navy); background:white; color:var(--navy); cursor:pointer; font-size:0.85rem;">Pending</button>
+      <button onclick="filterTasks('completed')" id="btn-completed" style="padding:8px 18px; border-radius:20px; border:2px solid var(--navy); background:white; color:var(--navy); cursor:pointer; font-size:0.85rem;">Completed</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="task-list">
+      <li class="empty-tasks" id="empty-msg">No tasks yet — add one above to get started!</li>
+    </ul>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 <span>Elias Olawale A.</span> — All Rights Reserved | Built for COS 106 – MIVA Open University</p>
+  </footer>
+
+  <script src="planner.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elias Olawale A. | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Elias<span>.</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleNav()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero fade-up">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Elias Olawale Akobada.</span></h1>
+      <p>Business strategist, RevOps enthusiast, and aspiring systems scientist. Currently studying at MIVA Open University and building the bridge between technology and business growth.</p>
+      <div class="hero-btns">
+        <a href="projects.html" class="btn-primary">View My Work</a>
+        <a href="contact.html" class="btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <div class="placeholder-img">👨🏾‍💻</div>
+    </div>
+  </section>
+
+  <!-- QUICK BIO -->
+  <section class="about-preview">
+    <h2 class="section-title">A Quick <span>Introduction</span></h2>
+    <div class="divider"></div>
+    <div class="about-grid">
+      <div>
+        <p>I'm a first-year Computer Science student at MIVA Open University with a background that might surprise you — my strengths lie firmly in the business world. I'm passionate about how technology can be used to solve real operational problems.</p>
+        <p>From marketing workflows to sales strategy and business automation, I see systems where others see chaos. My goal is to combine my academic training with hands-on experience to become a well-rounded tech-business professional.</p>
+        <a href="about.html" class="btn-primary" style="display:inline-block; margin-top:10px;">Learn More</a>
+      </div>
+      <div>
+        <!-- quick facts table -->
+        <table class="edu-table">
+          <thead>
+            <tr>
+              <th>Field</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Full Name</td>
+              <td>Elias Olawale A.</td>
+            </tr>
+            <tr>
+              <td>University</td>
+              <td>MIVA Open University</td>
+            </tr>
+            <tr>
+              <td>Course</td>
+              <td>Computer Science (COS 106)</td>
+            </tr>
+            <tr>
+              <td>Interests</td>
+              <td>Business, Tech, Systems</td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td>Nigeria</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS PREVIEW -->
+  <section class="skills-preview">
+    <h2 class="section-title">Core <span>Skills</span></h2>
+    <div class="divider"></div>
+    <div class="skills-grid">
+      <span class="skill-tag orange">Technical Writing</span>
+      <span class="skill-tag teal">Marketing Workflows</span>
+      <span class="skill-tag purple">Business Development</span>
+      <span class="skill-tag gold">Sales Strategy</span>
+      <span class="skill-tag navy">RevOps</span>
+      <span class="skill-tag orange">Business Automations</span>
+      <span class="skill-tag teal">Advertising Management</span>
+      <span class="skill-tag purple">Systems Thinking</span>
+      <span class="skill-tag gold">HTML & CSS</span>
+      <span class="skill-tag navy">JavaScript (Learning)</span>
+    </div>
+  </section>
+
+  <!-- AUDIO INTRO SECTION (multimedia req) -->
+  <section style="background: white; padding: 60px; text-align: center;">
+    <h2 class="section-title">A Note <span>From Me</span></h2>
+    <div class="divider"></div>
+    <p style="color: var(--grey); max-width: 520px; margin: 0 auto 25px;">
+      Below is a short audio introduction. If you prefer to read, just scroll down to the About page.
+    </p>
+    <audio controls style="width:100%; max-width:480px; display:block; margin: 0 auto;">
+      <source src="intro.mp3" type="audio/mpeg">
+      Your browser doesn't support the audio element — that's alright, check out the About page instead.
+    </audio>
+    <p style="color:#bbb; font-size:0.8rem; margin-top:10px;">(Audio file coming soon)</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 <span>Elias Olawale A.</span> — All Rights Reserved | Built for COS 106 – MIVA Open University</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
